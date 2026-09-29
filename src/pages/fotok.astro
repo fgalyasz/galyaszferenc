@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+import { PLATES } from "../data/photos";
+---
+
+<Base
+  title="Fotóim"
+  description="Esküvő, portré, divat, glamour, művészi akt, rendezvény és egyházi fotográfia."
+>
+  <article class="page">
+    <header class="page-head">
+      <p class="index">05 — Fotóim</p>
+      <h1>Hat műfaj, egy fény.</h1>
+      <p class="lede">
+        Esküvő, portré, divat, glamour, művészi akt, rendezvény és egyházi alkalom. Mindegyiknek megvan a maga fénye.
+      </p>
+    </header>
+    <div class="grid-3">
+      {
+        PLATES.map((plate) => (
+          <article class={`plate ${plate.tone}`}>
+            <div class="plate-light" aria-hidden="true"></div>
+            <p class="meta">Műfaj</p>
+            <h2>{plate.title}</h2>
+            <p>{plate.text}</p>
+          </article>
+        ))
+      }
+    </div>
+  </article>
+</Base>

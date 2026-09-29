@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../data/site";
+---
+
+<Base
+  title="Adatvédelem"
+  description="A kapcsolatűrlap adatait Cloudflare D1 tárolja. Az oldal nem használ követő sütit."
+>
+  <article class="page prose">
+    <header class="page-head">
+      <p class="index">09 — Adatvédelem</p>
+      <h1>Adatvédelem</h1>
+    </header>
+    <p>
+      Az oldal statikus, Cloudflare Pages szolgálja ki. Nincs fiók, nincs hírlevél, és nincs
+      külső analitikai követő.
+    </p>
+    <p>
+      A kapcsolatűrlap a nevet, az e-mail-címet, a témát és az üzenetet egy Cloudflare D1
+      adatbázisba írja, nyugat-európai régióban. Erre azért van szükség, hogy válaszolni tudjak.
+      Az üzenethez IP-címet nem mentek. A túl gyakori küldést egy rövid életű számláló fogja meg,
+      óránként legfeljebb öt üzenettel egy címről. A számláló egy óra után elévül.
+    </p>
+    <p>
+      Az adatkezelő: {SITE.name}, {SITE.location}. Elérhetőség: {SITE.email}.
+      Törlést ugyanerre a címre lehet kérni.
+    </p>
+  </article>
+</Base>

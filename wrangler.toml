@@ -1,0 +1,12 @@
+name = "galyaszferenc"
+compatibility_date = "2026-09-29"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "CONTACT_DB"
+database_name = "galyaszferenc-contact"
+database_id = "5f191f15-daec-44b8-8a36-e6013eff1f6b"
+
+[[kv_namespaces]]
+binding = "CONTACT_RATE_LIMIT"
+id = "bd7902e1e42f4467ab53368fa392993e"

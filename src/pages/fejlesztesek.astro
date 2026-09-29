@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+import { SHIPPED, WORKSHOP } from "../data/works";
+---
+
+<Base
+  title="Fejlesztéseim"
+  description="TenPrint Software macOS alkalmazások, MarkSweep, és a fotós valamint zenei műhely eszközei."
+>
+  <article class="page">
+    <header class="page-head">
+      <p class="index">06 — Fejlesztéseim</p>
+      <h1>Kis program, egy feladat.</h1>
+      <p class="lede">
+        Nappal szoftvert írok. A saját kiadások natív macOS segédprogramok: helyi adat, egyszeri licenc, nincs követés.
+      </p>
+    </header>
+    <div class="grid-2">
+      {
+        SHIPPED.map((work) => (
+          <article class="card">
+            <p class="meta">{work.status}</p>
+            <h2>{work.name}</h2>
+            <p>{work.text}</p>
+            <p><a href={work.href}>{work.label}</a></p>
+          </article>
+        ))
+      }
+    </div>
+    <h2 style="margin: 2.5rem 0 1rem; font-size: 2.2rem;">Műhely</h2>
+    <div class="grid-3">
+      {
+        WORKSHOP.map((work) => (
+          <article class="card">
+            <p class="meta">{work.status}</p>
+            <h2>{work.name}</h2>
+            <p>{work.text}</p>
+            <p><a href={work.href}>{work.label}</a></p>
+          </article>
+        ))
+      }
+    </div>
+  </article>
+</Base>

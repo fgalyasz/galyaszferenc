@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../data/site";
+---
+
+<Base title="Impresszum" description="Az oldal üzemeltetője: Gályász Ferenc, Szigetszentmiklós.">
+  <article class="page prose">
+    <header class="page-head">
+      <p class="index">08 — Impresszum</p>
+      <h1>Impresszum</h1>
+    </header>
+    <p>Az oldalt üzemelteti: {SITE.name}</p>
+    <p>Helyszín: {SITE.location}, Magyarország</p>
+    <p>E-mail: <a class="mail" href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    <p>
+      Személyes portfólió fotográfiáról, zeneszerzésről és szoftverfejlesztésről.
+      A TenPrint Software termékei a <a href={SITE.company}>tenprintsoftware.com</a> oldalon érhetők el.
+    </p>
+  </article>
+</Base>

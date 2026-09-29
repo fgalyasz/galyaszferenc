@@ -1,0 +1,14 @@
+---
+import { SITE } from "../data/site";
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <p>© {year} {SITE.name} · {SITE.location}</p>
+  <nav aria-label="Lábjegyzet">
+    <a href="/impresszum">Impresszum</a>
+    <a href="/adatvedelem">Adatvédelem</a>
+    <a href={SITE.github}>GitHub</a>
+    <a href={SITE.linkedin}>LinkedIn</a>
+  </nav>
+</footer>

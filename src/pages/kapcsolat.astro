@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../data/site";
+
+const sent = Astro.url.searchParams.get("sent");
+---
+
+<Base
+  title="Kapcsolat"
+  description="Üzenet Gályász Ferencnek fotózásról, zenéről vagy szoftverről."
+>
+  <article class="page">
+    <header class="page-head">
+      <p class="index">07 — Kapcsolat</p>
+      <h1>Írj, melyik gyakorlatról van szó.</h1>
+      <p class="lede">
+        Fotózás, zene vagy fejlesztés. Az üzenet a Cloudflare-ön tárolódik, és erre a címre is írhatsz közvetlenül:
+        <a class="mail" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      </p>
+    </header>
+    <form id="contact-form" class="form" method="post" action="/api/contact">
+      <label>Név<input name="name" type="text" autocomplete="name" required minlength="2" maxlength="120" /></label>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required maxlength="200" /></label>
+      <label>
+        Téma
+        <select name="topic" required>
+          <option value="foto">Fotózás</option>
+          <option value="zene">Zene</option>
+          <option value="fejlesztes">Fejlesztés</option>
+          <option value="egyeb">Egyéb</option>
+        </select>
+      </label>
+      <label>Üzenet<textarea name="message" required minlength="10" maxlength="4000"></textarea></label>
+      <label class="honeypot" aria-hidden="true">Cég<input name="company" type="text" tabindex="-1" autocomplete="off" /></label>
+      <button type="submit">Üzenet küldése</button>
+      <p id="form-status" class="note" role="status">
+        {sent === "1" ? "Megkaptam. Hamarosan válaszolok." : ""}
+        {sent === "0" ? "Az üzenet nem ment el. Írj e-mailben." : ""}
+      </p>
+    </form>
+  </article>
+  <script is:inline src="/contact.js" defer></script>
+</Base>

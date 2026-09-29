@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { LANES } from "../data/site";
+---
+
+<Base
+  title="Gályász Ferenc"
+  description="Gályász Ferenc személyes oldala: hivatásos fotográfia, zeneszerzés és szoftverfejlesztés."
+>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="kicker">Fotográfus · zeneszerző · fejlesztő</p>
+      <h1>Gályász Ferenc</h1>
+      <p class="lede">
+        Fényből képet, hangból darabot, ötletből programot csinálok. Három gyakorlat, egy név.
+      </p>
+    </div>
+    <div class="lanes">
+      {
+        LANES.map((lane) => (
+          <a class={`lane lane-${lane.tone}`} href={lane.href}>
+            <span>{lane.kicker}</span>
+            <strong>{lane.title}</strong>
+            <p>{lane.text}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,42 @@
+---
+import Base from "../layouts/Base.astro";
+import { SONGS } from "../data/songs";
+---
+
+<Base
+  title="Dalaim"
+  description="Gályász Ferenc darabjai. A kiadott címek egy helyen, a stúdió módszere szerint."
+>
+  <article class="page">
+    <header class="page-head">
+      <p class="index">04 — Dalaim</p>
+      <h1>A partitúra még nyílik.</h1>
+      <p class="lede">
+        A darabok a Vocal Alchemist öt tételén mennek át: izolálás, hangmagasság, artikuláció, hangszerelés, mix.
+      </p>
+    </header>
+    {
+      SONGS.length === 0 ? (
+        <section class="card">
+          <p class="meta">Katalógus</p>
+          <h2>Még nincs kiadott cím ezen az oldalon.</h2>
+          <p>
+            Publikus, ellenőrizhető számlistát nem tettem ki címként. Amint egy darab kiadásra kerül, ezen a lapon jelenik meg.
+          </p>
+        </section>
+      ) : (
+        <div class="score">
+          {SONGS.map((song) => (
+            <section class="movement">
+              <p class="meta">Dal</p>
+              <div>
+                <h2>{song.title}</h2>
+                <p>{song.note}</p>
+              </div>
+            </section>
+          ))}
+        </div>
+      )
+    }
+  </article>
+</Base>

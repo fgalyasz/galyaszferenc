@@ -1,0 +1,3 @@
+Contact: mailto:fgalyasz@gmail.com
+Preferred-Languages: hu, en
+Canonical: https://galyaszferenc.pages.dev/.well-known/security.txt
