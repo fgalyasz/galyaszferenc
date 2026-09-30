@@ -215,7 +215,7 @@ h1, h2, h3 {
 
 .prose p, .stack p { color: var(--muted); }
 
-.prose { max-width: var(--measure); }
+.prose { max-width: var(--measure); margin-bottom: 2.5rem; }
 
 .grid-2, .grid-3 {
   display: grid;
@@ -280,7 +280,7 @@ h1, h2, h3 {
 .timeline { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
 .timeline li {
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 8.5rem 1fr;
   gap: 1rem;
   padding: 0.9rem 0;
   border-top: 1px solid var(--line);

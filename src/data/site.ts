@@ -23,20 +23,20 @@ export const LANES = [
     tone: "photo",
     kicker: "Fény",
     title: "Fotográfia",
-    text: "Esküvő, portré, divat, glamour, művészi akt, rendezvény és egyházi alkalom. 2009 óta.",
+    text: "Alkalmazott fotográfus, kiemelkedő eredménnyel. Esküvő, portré, divat, glamour, művészi akt, rendezvény.",
   },
   {
     href: "/dalok",
     tone: "music",
     kicker: "Hang",
     title: "Zeneszerzés",
-    text: "Saját dalok. A szerzés külön mesterség, a fotó és a kód mellett.",
+    text: "Gitár, furulya, szintetizátor. A szöveget, a zenét és az előadást is én viszem.",
   },
   {
     href: "/fejlesztesek",
     tone: "code",
     kicker: "Kód",
     title: "Szoftver",
-    text: "Napi mérnöki munka, és a TenPrint Software kicsi, natív macOS alkalmazásai.",
+    text: "Négyévesen dőlt el. Ma felhőnatív tesztkeretrendszerek, és saját alkalmazások kevés beállítással.",
   },
 ];

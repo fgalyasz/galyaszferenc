@@ -5,16 +5,24 @@ import { SHIPPED, WORKSHOP } from "../data/works";
 
 <Base
   title="Fejlesztéseim"
-  description="TenPrint Software macOS alkalmazások, MarkSweep, és a fotós műhely eszközei."
+  description="Felhőnatív Kubernetes tesztkeretrendszerek, és saját alkalmazások a lehető legkevesebb beállítással."
 >
   <article class="page">
     <header class="page-head">
       <p class="index">06 — Fejlesztéseim</p>
-      <h1>Kis program, egy feladat.</h1>
+      <h1>Megoldás, kevés beállítással.</h1>
       <p class="lede">
-        Nappal szoftvert írok. A saját kiadások natív macOS segédprogramok: helyi adat, egyszeri licenc, nincs követés.
+        Olyan programot írok, ami az emberek számára fontos problémát old meg. A felhasználó úgy tudja használni, ahogyan elképzelte, hosszas konfiguráció nélkül.
       </p>
     </header>
+    <div class="prose">
+      <p>
+        A munkahelyen teszteléshez írt TAF-okból indult. Ma felhőnatív, Kubernetesre épülő
+        tesztkeretrendszereken dolgozom. AI funkciókkal, automatikus döntéssel és tanulással
+        megmondják a lefuttatott tesztekből, van-e gond a termékkel. Ha van, megoldási javaslatot
+        építenek, akár kész szövegben, hogy ne kelljen minden logot végigolvasni.
+      </p>
+    </div>
     <div class="grid-2">
       {
         SHIPPED.map((work) => (

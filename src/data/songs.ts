@@ -7,23 +7,23 @@ export type Movement = {
 export const MOVEMENTS: Movement[] = [
   {
     index: "01",
-    title: "Dallam",
-    text: "A dal innen indul. A dallamnak egyedül is meg kell állnia, mielőtt kíséret kerül alá.",
+    title: "Gitár",
+    text: "Három-négy évesen kaptam az első akusztikus gitárt. A zene addigra már velem volt, a hangszer innentől a kezemben is.",
   },
   {
     index: "02",
-    title: "Szöveg",
-    text: "A szavak a dallam ritmusára ülnek. A szöveg a dalt viszi, nem magyarázza utólag.",
+    title: "Furulya",
+    text: "Nyolcévesen kezdtem furulyázni. A gitár után ez lett a következő hangszer.",
   },
   {
     index: "03",
-    title: "Kíséret",
-    text: "A hangszerelés a dallamot hordozza. Ami eltakarja az éneket, az kikerül.",
+    title: "Szintetizátor",
+    text: "Tízéves koromtól egyre nagyobb tudású szintetizátorok jöttek. Ma leginkább szoftvereseken dolgozom, néhány fizikai hangszer még megvan.",
   },
   {
     index: "04",
-    title: "Hangzás",
-    text: "A felvétel akkor kész, ha a szólamok egymáshoz vannak keverve, és a dal egyben hallatszik.",
+    title: "Dal",
+    text: "A szöveget és a zenét is én írom, és magam adom elő. A dalszövegek az életem napi történésein alapulnak.",
   },
 ];
 
