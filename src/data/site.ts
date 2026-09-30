@@ -30,7 +30,7 @@ export const LANES = [
     tone: "music",
     kicker: "Hang",
     title: "Zeneszerzés",
-    text: "Nyers énekből kész darab. Tisztítás, formáns, hangszerelés, mix — a saját stúdióeszközömön.",
+    text: "Saját dalok. A szerzés külön mesterség, a fotó és a kód mellett.",
   },
   {
     href: "/fejlesztesek",

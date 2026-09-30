@@ -46,13 +46,6 @@ export const WORKSHOP: Work[] = [
     label: "tenprintsoftware.com",
   },
   {
-    name: "Vocal Alchemist",
-    status: "stúdió",
-    text: "A zeneszerzés gépezete: énekizolálás, hangmagasság, hangkonverzió és hangszerelés egy pipeline-ban.",
-    href: "/zeneszerzes",
-    label: "A módszer",
-  },
-  {
     name: "Photo Organizer",
     status: "fotó",
     text: "A forrásmappát nem bántja. A képeket a beállított minta szerint másolja a rendező könyvtárba.",

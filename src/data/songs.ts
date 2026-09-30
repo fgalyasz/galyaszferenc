@@ -7,28 +7,23 @@ export type Movement = {
 export const MOVEMENTS: Movement[] = [
   {
     index: "01",
-    title: "Izolálás",
-    text: "A nyers felvételből a Demucs emeli ki az éneket. A dalszerzés a tiszta szólamon kezdődik, nem a szoba zaján.",
+    title: "Dallam",
+    text: "A dal innen indul. A dallamnak egyedül is meg kell állnia, mielőtt kíséret kerül alá.",
   },
   {
     index: "02",
-    title: "Hangmagasság",
-    text: "A Parselmouth formánst tartó korrekciót ad. A hang a helyére kerül, a testessége megmarad.",
+    title: "Szöveg",
+    text: "A szavak a dallam ritmusára ülnek. A szöveg a dalt viszi, nem magyarázza utólag.",
   },
   {
     index: "03",
-    title: "Artikuláció",
-    text: "A self-SVC, RVC-vel, énekesi szintű artikuláció felé viszi a saját hangot. Nem másik embert keresek, hanem a felvétel jobb változatát.",
+    title: "Kíséret",
+    text: "A hangszerelés a dallamot hordozza. Ami eltakarja az éneket, az kikerül.",
   },
   {
     index: "04",
-    title: "Hangszerelés",
-    text: "A megtisztított ének adja a hangszerelés alapját. A kíséret a dallamhoz igazodik, nem egy kész loopra énekelek rá.",
-  },
-  {
-    index: "05",
-    title: "Mix",
-    text: "A szólamok egymáshoz igazítása, gain és hangerő. A cél egy masterre kész csomag: mix, sávok, metaadat.",
+    title: "Hangzás",
+    text: "A felvétel akkor kész, ha a szólamok egymáshoz vannak keverve, és a dal egyben hallatszik.",
   },
 ];
 
